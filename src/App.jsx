@@ -3,6 +3,8 @@ import Login from './components/Login';
 import NavBar from './components/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import Register from './components/Register';
+import ForgotPassword from './components/ForgotPassword';
+import Dashboard from './components/Dashboard';
 
 function App() {
 	return (
@@ -17,6 +19,14 @@ function App() {
 					<Route
 						path='/register'
 						element={<Register />}
+					/>
+					<Route
+						path='/forgot-password'
+						element={<ForgotPassword />}
+					/>
+					<Route
+						path='/dashboard'
+						element={<Dashboard />}
 					/>
 				</Routes>
 			</div>
